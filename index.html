@@ -7,17 +7,63 @@
   <meta name="title" content="Ruffle Example">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="English">
-  <title>Ruffle Example</title>
+  <title>Grave Danger</title>
   <script src="main.js"></script>
   <noscript>Your browser doesn't have JavaScript enabled. Please enable JavaScript or switch to a browser that
     supports it.</noscript>
-  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </head>
 <body>
+  <h1>Grave Danger</h1>
+  <h2>point and click horror game</h2>
+  <p>GRA-211 "Interactive Animation" </br>
+      SNHU Game Programming and Development </br>
+      April 2023</p>
+  <h3>(Right click to go fullscreen)</h3>
   <object>
-    <embed src="GraveDanger_FinalDraft.swf" width="550" height="400" />
+    <embed src="./flashfiles/GraveDanger_FinalDraft.swf" width="720" height="480" />
   </object>
+  <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.RufflePlayer.config = {
+    // Options affecting the whole page
+    "publicPath": undefined,
+    "polyfills": true,
 
+        // Options affecting files only
+        "allowScriptAccess": false, // Polyfill elements have a different default value, see the allowScriptAccess section
+        "autoplay": "auto",
+        "unmuteOverlay": "visible",
+        "backgroundColor": null,
+        "wmode": "window",
+        "letterbox": "fullscreen",
+        "warnOnUnsupportedContent": true,
+        "contextMenu": "off",
+        "showSwfDownload": false,
+        "upgradeToHttps": window.location.protocol === "https:",
+        "maxExecutionDuration": 15,
+        "logLevel": "error",
+        "base": null,
+        "menu": true,
+        "salign": "",
+        "forceAlign": false,
+        "scale": "showAll",
+        "forceScale": false,
+        "frameRate": null,
+        "quality": "high",
+        "splashScreen": true,
+        "preferredRenderer": null,
+        "openUrlMode": "allow",
+        "allowNetworking": "all",
+        "favorFlash": true,
+        "socketProxy": [],
+        "fontSources": [],
+        "defaultFonts": {},
+    "credentialAllowList": [],
+    "playerRuntime": "flashPlayer",
+    "allowFullscreen": false,
+    "fullScreenAspectRatio": "",
+    };
+  </script>
   <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </body>
 </html>
