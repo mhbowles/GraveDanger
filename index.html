@@ -11,11 +11,13 @@
   <script src="main.js"></script>
   <noscript>Your browser doesn't have JavaScript enabled. Please enable JavaScript or switch to a browser that
     supports it.</noscript>
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </head>
 <body>
-<div id='ruffle' class="gameloc"></div>
-<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-<script id = "gabe">swfobject.embedSWF("../ruffle-example/flashfiles/GraveDanger_FinalDraft.swf", 'ruffle', 800, 600);</script>
+  <object>
+        <embed src="GraveDanger_FinalDraft.swf" width="550" height="400" />
+    </object>
+
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </body>
 </html>
-
